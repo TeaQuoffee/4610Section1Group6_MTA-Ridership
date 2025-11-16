@@ -1,0 +1,1650 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='MTA_Daily_Ridership_Data__2020_-_2025' inline='true' name='federated.0v517bk0gc223j14gl0w80ccg6eu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MTA_Daily_Ridership_Data__2020_-_2025' name='textscan.0e1cc5z1kw618n12kjike0o6pekg'>
+            <connection class='textscan' directory='C:/Users/Jay Tran/Downloads' filename='MTA_Daily_Ridership_Data__2020_-_2025.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0e1cc5z1kw618n12kjike0o6pekg' name='MTA_Daily_Ridership_Data__2020_-_2025.csv' table='[MTA_Daily_Ridership_Data__2020_-_2025#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='Subways: Total Estimated Ridership' ordinal='1' />
+            <column datatype='real' name='Subways: % of Comparable Pre-Pandemic Day' ordinal='2' />
+            <column datatype='integer' name='Buses: Total Estimated Ridership' ordinal='3' />
+            <column datatype='real' name='Buses: % of Comparable Pre-Pandemic Day' ordinal='4' />
+            <column datatype='integer' name='LIRR: Total Estimated Ridership' ordinal='5' />
+            <column datatype='real' name='LIRR: % of Comparable Pre-Pandemic Day' ordinal='6' />
+            <column datatype='integer' name='Metro-North: Total Estimated Ridership' ordinal='7' />
+            <column datatype='real' name='Metro-North: % of Comparable Pre-Pandemic Day' ordinal='8' />
+            <column datatype='integer' name='Access-A-Ride: Total Scheduled Trips' ordinal='9' />
+            <column datatype='real' name='Access-A-Ride: % of Comparable Pre-Pandemic Day' ordinal='10' />
+            <column datatype='integer' name='Bridges and Tunnels: Total Traffic' ordinal='11' />
+            <column datatype='real' name='Bridges and Tunnels: % of Comparable Pre-Pandemic Day' ordinal='12' />
+            <column datatype='integer' name='Staten Island Railway: Total Estimated Ridership' ordinal='13' />
+            <column datatype='real' name='Staten Island Railway: % of Comparable Pre-Pandemic Day' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subways: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Subways: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Subways: Total Estimated Ridership</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subways: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Subways: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Subways: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Buses: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Buses: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Buses: Total Estimated Ridership</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Buses: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Buses: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Buses: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIRR: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LIRR: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>LIRR: Total Estimated Ridership</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIRR: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIRR: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>LIRR: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metro-North: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Metro-North: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Metro-North: Total Estimated Ridership</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metro-North: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Metro-North: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Metro-North: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Access-A-Ride: Total Scheduled Trips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Access-A-Ride: Total Scheduled Trips]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Access-A-Ride: Total Scheduled Trips</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Access-A-Ride: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Access-A-Ride: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Access-A-Ride: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bridges and Tunnels: Total Traffic</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bridges and Tunnels: Total Traffic]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Bridges and Tunnels: Total Traffic</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bridges and Tunnels: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bridges and Tunnels: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Bridges and Tunnels: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Staten Island Railway: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Staten Island Railway: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Staten Island Railway: Total Estimated Ridership</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Staten Island Railway: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Staten Island Railway: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Staten Island Railway: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Buses: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column caption='MTA Total Ridership' datatype='integer' name='[Calculation_1869275326625333249]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Buses: Total Estimated Ridership]+[Subways: Total Estimated Ridership]+[LIRR: Total Estimated Ridership]+[Metro-North: Total Estimated Ridership]+[Staten Island Railway: Total Estimated Ridership]' />
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[LIRR: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Metro-North: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Staten Island Railway: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Subways: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column caption='MTA_Daily_Ridership_Data__2020_-_2025.csv' datatype='table' name='[__tableau_internal_object_id__].[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]' role='measure' type='quantitative' />
+      <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Buses: Total Estimated Ridership]' derivation='Sum' name='[sum:Buses: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LIRR: Total Estimated Ridership]' derivation='Sum' name='[sum:LIRR: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Metro-North: Total Estimated Ridership]' derivation='Sum' name='[sum:Metro-North: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Staten Island Railway: Total Estimated Ridership]' derivation='Sum' name='[sum:Staten Island Railway: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Subways: Total Estimated Ridership]' derivation='Sum' name='[sum:Subways: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/JAYTRA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0ooaueu1au43sb1gl38cw182aeuu.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/14/2025 06:04:52 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1776</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subways: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Subways: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Subways: Total Estimated Ridership</remote-alias>
+              <ordinal>1</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1776</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subways: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Subways: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Subways: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>2</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Buses: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Buses: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Buses: Total Estimated Ridership</remote-alias>
+              <ordinal>3</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1776</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Buses: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Buses: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Buses: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>4</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LIRR: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LIRR: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LIRR: Total Estimated Ridership</remote-alias>
+              <ordinal>5</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1670</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LIRR: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LIRR: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LIRR: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>6</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>141</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Metro-North: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Metro-North: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Metro-North: Total Estimated Ridership</remote-alias>
+              <ordinal>7</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1749</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Metro-North: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Metro-North: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Metro-North: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>8</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Access-A-Ride: Total Scheduled Trips</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Access-A-Ride: Total Scheduled Trips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Access-A-Ride: Total Scheduled Trips</remote-alias>
+              <ordinal>9</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1478</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Access-A-Ride: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Access-A-Ride: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Access-A-Ride: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>10</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bridges and Tunnels: Total Traffic</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bridges and Tunnels: Total Traffic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bridges and Tunnels: Total Traffic</remote-alias>
+              <ordinal>11</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1749</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bridges and Tunnels: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Bridges and Tunnels: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bridges and Tunnels: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>12</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Staten Island Railway: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Staten Island Railway: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Staten Island Railway: Total Estimated Ridership</remote-alias>
+              <ordinal>13</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1267</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Staten Island Railway: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Staten Island Railway: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Staten Island Railway: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>14</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0v517bk0gc223j14gl0w80ccg6eu].[sum:Buses: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0v517bk0gc223j14gl0w80ccg6eu].[sum:Subways: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0v517bk0gc223j14gl0w80ccg6eu].[sum:Staten Island Railway: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0v517bk0gc223j14gl0w80ccg6eu].[sum:Metro-North: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0v517bk0gc223j14gl0w80ccg6eu].[sum:LIRR: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0v517bk0gc223j14gl0w80ccg6eu].[tyr:Date:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <filter class='quantitative' column='[none:Date:qk]' filter-group='2' included-values='in-range'>
+        <min>#2020-01-01#</min>
+        <max>#2024-12-31#</max>
+      </filter>
+      <object-graph>
+        <objects>
+          <object caption='MTA_Daily_Ridership_Data__2020_-_2025.csv' id='MTA_Daily_Ridership_Data__2020_-_2025.csv_405EB75D1A2E4440A3BFF3856D74A069'>
+            <properties context=''>
+              <relation connection='textscan.0e1cc5z1kw618n12kjike0o6pekg' name='MTA_Daily_Ridership_Data__2020_-_2025.csv' table='[MTA_Daily_Ridership_Data__2020_-_2025#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='integer' name='Subways: Total Estimated Ridership' ordinal='1' />
+                  <column datatype='real' name='Subways: % of Comparable Pre-Pandemic Day' ordinal='2' />
+                  <column datatype='integer' name='Buses: Total Estimated Ridership' ordinal='3' />
+                  <column datatype='real' name='Buses: % of Comparable Pre-Pandemic Day' ordinal='4' />
+                  <column datatype='integer' name='LIRR: Total Estimated Ridership' ordinal='5' />
+                  <column datatype='real' name='LIRR: % of Comparable Pre-Pandemic Day' ordinal='6' />
+                  <column datatype='integer' name='Metro-North: Total Estimated Ridership' ordinal='7' />
+                  <column datatype='real' name='Metro-North: % of Comparable Pre-Pandemic Day' ordinal='8' />
+                  <column datatype='integer' name='Access-A-Ride: Total Scheduled Trips' ordinal='9' />
+                  <column datatype='real' name='Access-A-Ride: % of Comparable Pre-Pandemic Day' ordinal='10' />
+                  <column datatype='integer' name='Bridges and Tunnels: Total Traffic' ordinal='11' />
+                  <column datatype='real' name='Bridges and Tunnels: % of Comparable Pre-Pandemic Day' ordinal='12' />
+                  <column datatype='integer' name='Staten Island Railway: Total Estimated Ridership' ordinal='13' />
+                  <column datatype='real' name='Staten Island Railway: % of Comparable Pre-Pandemic Day' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='MTA_Daily_Ridership_Data__2020_-_2025 (2)' inline='true' name='federated.1j9yxde1stux3r1cvkdfh0x4dhhv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MTA_Daily_Ridership_Data__2020_-_2025' name='textscan.12t53gv0bjlgr711cz0j318wmwuk'>
+            <connection class='textscan' directory='C:/Users/Jay Tran/Downloads' filename='MTA_Daily_Ridership_Data__2020_-_2025.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.12t53gv0bjlgr711cz0j318wmwuk' name='MTA_Daily_Ridership_Data__2020_-_2025.csv' table='[MTA_Daily_Ridership_Data__2020_-_2025#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='Subways: Total Estimated Ridership' ordinal='1' />
+            <column datatype='real' name='Subways: % of Comparable Pre-Pandemic Day' ordinal='2' />
+            <column datatype='integer' name='Buses: Total Estimated Ridership' ordinal='3' />
+            <column datatype='real' name='Buses: % of Comparable Pre-Pandemic Day' ordinal='4' />
+            <column datatype='integer' name='LIRR: Total Estimated Ridership' ordinal='5' />
+            <column datatype='real' name='LIRR: % of Comparable Pre-Pandemic Day' ordinal='6' />
+            <column datatype='integer' name='Metro-North: Total Estimated Ridership' ordinal='7' />
+            <column datatype='real' name='Metro-North: % of Comparable Pre-Pandemic Day' ordinal='8' />
+            <column datatype='integer' name='Access-A-Ride: Total Scheduled Trips' ordinal='9' />
+            <column datatype='real' name='Access-A-Ride: % of Comparable Pre-Pandemic Day' ordinal='10' />
+            <column datatype='integer' name='Bridges and Tunnels: Total Traffic' ordinal='11' />
+            <column datatype='real' name='Bridges and Tunnels: % of Comparable Pre-Pandemic Day' ordinal='12' />
+            <column datatype='integer' name='Staten Island Railway: Total Estimated Ridership' ordinal='13' />
+            <column datatype='real' name='Staten Island Railway: % of Comparable Pre-Pandemic Day' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subways: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Subways: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Subways: Total Estimated Ridership</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subways: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Subways: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Subways: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Buses: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Buses: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Buses: Total Estimated Ridership</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Buses: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Buses: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Buses: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIRR: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LIRR: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>LIRR: Total Estimated Ridership</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIRR: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LIRR: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>LIRR: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metro-North: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Metro-North: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Metro-North: Total Estimated Ridership</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metro-North: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Metro-North: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Metro-North: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Access-A-Ride: Total Scheduled Trips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Access-A-Ride: Total Scheduled Trips]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Access-A-Ride: Total Scheduled Trips</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Access-A-Ride: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Access-A-Ride: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Access-A-Ride: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bridges and Tunnels: Total Traffic</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bridges and Tunnels: Total Traffic]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Bridges and Tunnels: Total Traffic</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bridges and Tunnels: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bridges and Tunnels: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Bridges and Tunnels: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Staten Island Railway: Total Estimated Ridership</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Staten Island Railway: Total Estimated Ridership]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Staten Island Railway: Total Estimated Ridership</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Staten Island Railway: % of Comparable Pre-Pandemic Day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Staten Island Railway: % of Comparable Pre-Pandemic Day]</local-name>
+            <parent-name>[MTA_Daily_Ridership_Data__2020_-_2025.csv]</parent-name>
+            <remote-alias>Staten Island Railway: % of Comparable Pre-Pandemic Day</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Access-A-Ride: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Bridges and Tunnels: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Buses: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Buses: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[LIRR: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[LIRR: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Metro-North: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Metro-North: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Staten Island Railway: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Staten Island Railway: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Subways: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Subways: Total Estimated Ridership]' role='measure' type='quantitative' />
+      <column caption='MTA_Daily_Ridership_Data__2020_-_2025.csv' datatype='table' name='[__tableau_internal_object_id__].[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]' role='measure' type='quantitative' />
+      <column-instance column='[Buses: % of Comparable Pre-Pandemic Day]' derivation='Attribute' name='[attr:Buses: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Access-A-Ride: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Access-A-Ride: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Bridges and Tunnels: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Bridges and Tunnels: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Buses: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Buses: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Buses: Total Estimated Ridership]' derivation='Avg' name='[avg:Buses: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LIRR: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:LIRR: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LIRR: Total Estimated Ridership]' derivation='Avg' name='[avg:LIRR: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Metro-North: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Metro-North: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Metro-North: Total Estimated Ridership]' derivation='Avg' name='[avg:Metro-North: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Staten Island Railway: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Staten Island Railway: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Staten Island Railway: Total Estimated Ridership]' derivation='Avg' name='[avg:Staten Island Railway: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Subways: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Subways: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Subways: Total Estimated Ridership]' derivation='Avg' name='[avg:Subways: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Buses: % of Comparable Pre-Pandemic Day]' derivation='CountD' name='[ctd:Buses: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Access-A-Ride: % of Comparable Pre-Pandemic Day]' derivation='Sum' name='[sum:Access-A-Ride: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Bridges and Tunnels: % of Comparable Pre-Pandemic Day]' derivation='Sum' name='[sum:Bridges and Tunnels: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Buses: % of Comparable Pre-Pandemic Day]' derivation='Sum' name='[sum:Buses: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Buses: Total Estimated Ridership]' derivation='Sum' name='[sum:Buses: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LIRR: % of Comparable Pre-Pandemic Day]' derivation='Sum' name='[sum:LIRR: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LIRR: Total Estimated Ridership]' derivation='Sum' name='[sum:LIRR: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Metro-North: % of Comparable Pre-Pandemic Day]' derivation='Sum' name='[sum:Metro-North: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Metro-North: Total Estimated Ridership]' derivation='Sum' name='[sum:Metro-North: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Staten Island Railway: % of Comparable Pre-Pandemic Day]' derivation='Sum' name='[sum:Staten Island Railway: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Staten Island Railway: Total Estimated Ridership]' derivation='Sum' name='[sum:Staten Island Railway: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Subways: % of Comparable Pre-Pandemic Day]' derivation='Sum' name='[sum:Subways: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Subways: Total Estimated Ridership]' derivation='Sum' name='[sum:Subways: Total Estimated Ridership:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/JAYTRA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1m1mlhw0znlnov1c5aagy0karcay.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='11/15/2025 05:45:06 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='MTA_Daily_Ridership_Data__2020_-_2025 (2)' increment-value='%null%' refresh-type='create' rows-inserted='1776' timestamp-start='2025-11-15 17:45:06.116' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1776</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subways: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Subways: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Subways: Total Estimated Ridership</remote-alias>
+              <ordinal>1</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1776</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subways: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Subways: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Subways: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>2</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Buses: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Buses: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Buses: Total Estimated Ridership</remote-alias>
+              <ordinal>3</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1776</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Buses: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Buses: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Buses: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>4</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LIRR: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LIRR: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LIRR: Total Estimated Ridership</remote-alias>
+              <ordinal>5</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1670</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LIRR: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LIRR: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LIRR: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>6</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>141</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Metro-North: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Metro-North: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Metro-North: Total Estimated Ridership</remote-alias>
+              <ordinal>7</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1749</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Metro-North: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Metro-North: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Metro-North: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>8</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Access-A-Ride: Total Scheduled Trips</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Access-A-Ride: Total Scheduled Trips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Access-A-Ride: Total Scheduled Trips</remote-alias>
+              <ordinal>9</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1478</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Access-A-Ride: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Access-A-Ride: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Access-A-Ride: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>10</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bridges and Tunnels: Total Traffic</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bridges and Tunnels: Total Traffic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bridges and Tunnels: Total Traffic</remote-alias>
+              <ordinal>11</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1749</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bridges and Tunnels: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Bridges and Tunnels: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bridges and Tunnels: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>12</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Staten Island Railway: Total Estimated Ridership</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Staten Island Railway: Total Estimated Ridership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Staten Island Railway: Total Estimated Ridership</remote-alias>
+              <ordinal>13</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1267</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Staten Island Railway: % of Comparable Pre-Pandemic Day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Staten Island Railway: % of Comparable Pre-Pandemic Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Staten Island Railway: % of Comparable Pre-Pandemic Day</remote-alias>
+              <ordinal>14</ordinal>
+              <family>MTA_Daily_Ridership_Data__2020_-_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[attr:Buses: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Access-A-Ride: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Buses: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[ctd:Buses: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Buses: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Buses: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Metro-North: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Subways: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Subways: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Subways: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:LIRR: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Staten Island Railway: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Staten Island Railway: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Staten Island Railway: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Subways: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Bridges and Tunnels: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Buses: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Metro-North: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Metro-North: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Metro-North: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Staten Island Railway: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:Access-A-Ride: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Bridges and Tunnels: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:LIRR: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:LIRR: \% of Comparable Pre-Pandemic Day:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[sum:LIRR: Total Estimated Ridership:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[tyr:Date:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='quantitative' column='[none:Date:qk]' filter-group='2' included-values='in-range'>
+        <min>#2020-01-01#</min>
+        <max>#2021-12-31#</max>
+      </filter>
+      <object-graph>
+        <objects>
+          <object caption='MTA_Daily_Ridership_Data__2020_-_2025.csv' id='MTA_Daily_Ridership_Data__2020_-_2025.csv_4973F14ED51A47A2A3D95EB173E1ED62'>
+            <properties context=''>
+              <relation connection='textscan.12t53gv0bjlgr711cz0j318wmwuk' name='MTA_Daily_Ridership_Data__2020_-_2025.csv' table='[MTA_Daily_Ridership_Data__2020_-_2025#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='integer' name='Subways: Total Estimated Ridership' ordinal='1' />
+                  <column datatype='real' name='Subways: % of Comparable Pre-Pandemic Day' ordinal='2' />
+                  <column datatype='integer' name='Buses: Total Estimated Ridership' ordinal='3' />
+                  <column datatype='real' name='Buses: % of Comparable Pre-Pandemic Day' ordinal='4' />
+                  <column datatype='integer' name='LIRR: Total Estimated Ridership' ordinal='5' />
+                  <column datatype='real' name='LIRR: % of Comparable Pre-Pandemic Day' ordinal='6' />
+                  <column datatype='integer' name='Metro-North: Total Estimated Ridership' ordinal='7' />
+                  <column datatype='real' name='Metro-North: % of Comparable Pre-Pandemic Day' ordinal='8' />
+                  <column datatype='integer' name='Access-A-Ride: Total Scheduled Trips' ordinal='9' />
+                  <column datatype='real' name='Access-A-Ride: % of Comparable Pre-Pandemic Day' ordinal='10' />
+                  <column datatype='integer' name='Bridges and Tunnels: Total Traffic' ordinal='11' />
+                  <column datatype='real' name='Bridges and Tunnels: % of Comparable Pre-Pandemic Day' ordinal='12' />
+                  <column datatype='integer' name='Staten Island Railway: Total Estimated Ridership' ordinal='13' />
+                  <column datatype='real' name='Staten Island Railway: % of Comparable Pre-Pandemic Day' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='MTA Ridership Barchart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>2020-2021 Average MTA Ridership
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MTA_Daily_Ridership_Data__2020_-_2025 (2)' name='federated.1j9yxde1stux3r1cvkdfh0x4dhhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j9yxde1stux3r1cvkdfh0x4dhhv'>
+            <column datatype='real' name='[Buses: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[LIRR: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Metro-North: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Staten Island Railway: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Subways: % of Comparable Pre-Pandemic Day]' role='measure' type='quantitative' />
+            <column-instance column='[Buses: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Buses: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LIRR: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:LIRR: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Metro-North: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Metro-North: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Staten Island Railway: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Staten Island Railway: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Subways: % of Comparable Pre-Pandemic Day]' derivation='Avg' name='[avg:Subways: % of Comparable Pre-Pandemic Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Buses: % of Comparable Pre-Pandemic Day:qk]' scope='cols' value='Buses' />
+            <format attr='title' class='0' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:LIRR: % of Comparable Pre-Pandemic Day:qk]' scope='cols' value='LLIR' />
+            <format attr='title' class='0' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Metro-North: % of Comparable Pre-Pandemic Day:qk]' scope='cols' value='Metro North' />
+            <format attr='title' class='0' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Staten Island Railway: % of Comparable Pre-Pandemic Day:qk]' scope='cols' value='Staten Island Railway' />
+            <format attr='title' class='0' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Subways: % of Comparable Pre-Pandemic Day:qk]' scope='cols' value='Subway' />
+            <format attr='height' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Buses: % of Comparable Pre-Pandemic Day:qk]' value='71' />
+            <format attr='height' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:LIRR: % of Comparable Pre-Pandemic Day:qk]' value='71' />
+            <format attr='height' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Metro-North: % of Comparable Pre-Pandemic Day:qk]' value='71' />
+            <format attr='height' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Staten Island Railway: % of Comparable Pre-Pandemic Day:qk]' value='71' />
+            <format attr='height' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Subways: % of Comparable Pre-Pandemic Day:qk]' value='71' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[mn:Date:ok]' value='37' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[mn:Date:ok]' value='28' />
+            <format attr='width' field='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[yr:Date:ok]' value='112' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='361' />
+                <format attr='maxwidth' value='361' />
+                <format attr='minheight' value='220' />
+                <format attr='maxheight' value='220' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Buses: % of Comparable Pre-Pandemic Day:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Buses: % of Comparable Pre-Pandemic Day:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:LIRR: % of Comparable Pre-Pandemic Day:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:LIRR: % of Comparable Pre-Pandemic Day:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#75a1c7' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Metro-North: % of Comparable Pre-Pandemic Day:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Metro-North: % of Comparable Pre-Pandemic Day:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Staten Island Railway: % of Comparable Pre-Pandemic Day:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Staten Island Railway: % of Comparable Pre-Pandemic Day:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Subways: % of Comparable Pre-Pandemic Day:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Subways: % of Comparable Pre-Pandemic Day:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[yr:Date:ok] / [federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[mn:Date:ok])</rows>
+        <cols>([federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Buses: % of Comparable Pre-Pandemic Day:qk] + ([federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:LIRR: % of Comparable Pre-Pandemic Day:qk] + ([federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Metro-North: % of Comparable Pre-Pandemic Day:qk] + ([federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Staten Island Railway: % of Comparable Pre-Pandemic Day:qk] + [federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[avg:Subways: % of Comparable Pre-Pandemic Day:qk]))))</cols>
+      </table>
+      <simple-id uuid='{75496638-E741-48BC-8160-4BF12E095CE7}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' maximized='true' name='MTA Ridership Barchart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[mn:Date:ok]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[:Measure Names]</field>
+            <field>[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[mn:Date:ok]</field>
+            <field>[federated.1j9yxde1stux3r1cvkdfh0x4dhhv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{55C5559F-31C0-4F35-94B3-601375A455E2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='MTA Ridership Barchart' width='192'>
+      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
+      RPb/B7LM4bIX8aJDAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
