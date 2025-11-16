@@ -37,6 +37,6 @@ Question 2: Which MTA transportation mode recovered fastest compared to pre-pand
 1) Include Year Ranges from 2021 and 2024
 - 2020: At the start of COVID a majority of New Yorkers were forced to work from home while the MTA was operating at regular capacity, so only essential workers were still using the MTA for their commutes, resulting in lower than normal passenger counts for the year
 - 2025: The data for 2025 is still incomplete resulting in a lower total passenger count for the year.
-![Data with Manipulations Applied ](Data with Manipulations Applied .png)
+
 # Analysis and Results 
 # Tableau Packaged Workbook 
