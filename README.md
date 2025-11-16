@@ -32,7 +32,7 @@ Question 1: How did daily subway ridership change from 2021 to 2024?
 ![Q1](Q1.png)
 Question 2: Which MTA transportation mode recovered fastest compared to pre-pandemic levels?
 - Why is this question important and interesting? This question encapsulates the multiple transportation services. Through the view of all transportation modes one may not how each was affected by the pandemic and how they recovered. The patterns in recovery also reveal which modes of transportation commuters may have chose to take after the pandemic versus pre-pandemic. Seeing the results of every mode helps the MTA adjust scheduling, funding, and investing based on the speed of recovery. 
-
+![Q2](Q2.png)
 # Manipulations Applied to the Dataset 
 1) Include Year Ranges from 2021 and 2024
 - 2020: At the start of COVID a majority of New Yorkers were forced to work from home while the MTA was operating at regular capacity, so only essential workers were still using the MTA for their commutes, resulting in lower than normal passenger counts for the year
