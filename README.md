@@ -40,3 +40,4 @@ Question 2: Which MTA transportation mode recovered fastest compared to pre-pand
 ![Manipulations](Manipulations.png)
 # Analysis and Results 
 # Tableau Packaged Workbook 
+![Question 2](MTAStatsProject.twb)
