@@ -38,6 +38,10 @@ Question 2: Which MTA transportation mode recovered fastest compared to pre-pand
 - 2020: At the start of COVID a majority of New Yorkers were forced to work from home while the MTA was operating at regular capacity, so only essential workers were still using the MTA for their commutes, resulting in lower than normal passenger counts for the year
 - 2025: The data for 2025 is still incomplete resulting in a lower total passenger count for the year.
 ![Manipulations](Manipulations.png)
+2) Excluding Modes of Transportation (Cars and Trucks, Tolls and Roads), and Years 2022-2025
+- Access-A-Ride (AAR): Data from AAR comes from scheduled rides made by riders with disabilities that make them unable to ride other modes of public transportation, this will disproportionately skew data about the general public.
+- Bridges and Tunnels: Cars, trucks, and other modes of transportation are counted by vehicle that pass through the toll roads and bridges managed by the MTA and do not accurately count the amount of passengers that utilize them, and have no restrictions placed upon them by the COVID lockdown, which will also skew data on MTA ridership recovery.
+
 # Analysis and Results 
 # Tableau Packaged Workbook 
 ![Question 2](MTAStatsProject.twb)
