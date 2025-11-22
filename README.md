@@ -50,15 +50,16 @@ Question 2: Which MTA transportation mode recovered fastest compared to pre-pand
 Original hypothesis: We expected transportation modes used by essential workers to recover faster, compared to commuter-rail systems that serve office workers
 
 Through our data, we found that:
--Buses recovered the fastest because essential workers continued in-person travel earlier and relied heavily on bus service
--Subways and LIRR had steady growth as both essential riders and office workers slowly returned under hybrid work arrangements
--Staten Island Railway recovered slowly due to its smaller rider base and more localized travel patterns
--Metro-North modes had the weakest recovery because remote work reduced the amount of traditional commuter travel
+- Buses recovered the fastest because essential workers continued in-person travel earlier and relied heavily on bus service
+- Subways and LIRR had steady growth as both essential riders and office workers slowly returned under hybrid work arrangements
+- Staten Island Railway recovered slowly due to its smaller rider base and more localized travel patterns
+- Metro-North modes had the weakest recovery because remote work reduced the amount of traditional commuter travel
+
 Revised hypothesis: the recovery patterns can also be understood by the average trip distance and the types of trips each mode supports.
--Buses recovered the fastest because they serve short, local trips that are able to rebound quickly after disruptions.
--Subways and the LIRR showed steady growth as medium-distance travel gradually returned.
--Staten Island Railway recovered slowly due to its smaller user base and moderate, localized patterns. 
--Metro-North had the weakest recovery because it serves long-distance commuter trips, which were the slowest in return. 
+- Buses recovered the fastest because they serve short, local trips that are able to rebound quickly after disruptions.
+- Subways and the LIRR showed steady growth as medium-distance travel gradually returned.
+- Staten Island Railway recovered slowly due to its smaller user base and moderate, localized patterns. 
+- Metro-North had the weakest recovery because it serves long-distance commuter trips, which were the slowest in return. 
 
 
 # Tableau Packaged Workbook 
